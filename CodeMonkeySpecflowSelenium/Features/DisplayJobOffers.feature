@@ -12,8 +12,8 @@ Scenario: Display JobOffers
 	And Filter by Company is activated using An Automated Company
 	And Filter by Status is activated using Open
 	And Filter by Date is activated using Today date
-	And Remove Filter is chosen
-	And Manage Button is Clickable
-	And Archive Button is Clickable
-	And Delete Button is Clickable
-	Then 
+	Then Manage Button is chosen
+	Then Archive Button is chosen
+	Then Remove Filter is chosen
+	Then Delete Button is chosen
+	
