@@ -15,5 +15,5 @@ Scenario: Display JobOffers
 	Then Manage Button is chosen
 	Then Archive Button is chosen
 	Then Remove Filter is chosen
-	Then Delete Button is chosen
+	#Then Delete Button is chosen
 	

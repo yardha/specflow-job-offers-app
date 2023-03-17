@@ -16,8 +16,8 @@ Scenario: Create Job Offer
 	And I fill the Programming Languages Field with HTML
 	And I fill the Languages Field with Mandarin
 	And I fill the Agile Methodologies Field with Yes
-	And I fill the City Field with Mariehamn
-	And I fill the Country Field with Aland Islands
+	And I fill the City Field with Zagreb
+	And I fill the Country Field with Croatia
 	And I fill the Availability Field with On site
 	And I hit Create Job Offer Button
 	Then I should redirected to Job Offer List page

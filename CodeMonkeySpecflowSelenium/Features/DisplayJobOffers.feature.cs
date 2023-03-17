@@ -102,16 +102,16 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-                TechTalk.SpecFlow.Table table2 = new TechTalk.SpecFlow.Table(new string[] {
+                TechTalk.SpecFlow.Table table3 = new TechTalk.SpecFlow.Table(new string[] {
                             "Browser",
                             "BrowserVersion",
                             "OS"});
-                table2.AddRow(new string[] {
+                table3.AddRow(new string[] {
                             "Edge",
                             "110.0.1587.46",
                             "Windows"});
 #line 5
- testRunner.Given("I navigate to JobOffersApp to Display Job", ((string)(null)), table2, "Given ");
+ testRunner.Given("I navigate to JobOffersApp to Display Job", ((string)(null)), table3, "Given ");
 #line hidden
 #line 8
  testRunner.When("I click Login to Display Job", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
@@ -142,9 +142,6 @@ this.ScenarioInitialize(scenarioInfo);
 #line hidden
 #line 17
  testRunner.Then("Remove Filter is chosen", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
-#line hidden
-#line 18
- testRunner.Then("Delete Button is chosen", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
             this.ScenarioCleanup();

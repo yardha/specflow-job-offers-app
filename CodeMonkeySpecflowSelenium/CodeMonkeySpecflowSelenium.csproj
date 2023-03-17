@@ -7,7 +7,9 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <SpecFlowObsoleteCodeBehindFiles Remove="Features\CreateJobOffers - Copy.feature.cs" />
     <SpecFlowObsoleteCodeBehindFiles Remove="Features\JobOffersApp - Copy.feature.cs" />
+    <SpecFlowObsoleteCodeBehindFiles Remove="Features\SearchJobOffers - Copy.feature.cs" />
   </ItemGroup>
 
   <ItemGroup>
@@ -26,12 +28,36 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Compile Update="Features\CreateStudents.feature.cs">
+      <DependentUpon>CreateStudents.feature</DependentUpon>
+    </Compile>
+    <Compile Update="Features\TeardownTest.feature.cs">
+      <DependentUpon>TeardownTest.feature</DependentUpon>
+    </Compile>
+    <Compile Update="Features\SearchJobOffers.feature.cs">
+      <Visible>true</Visible>
+      <DependentUpon>SearchJobOffers.feature</DependentUpon>
+      <DesignTime>true</DesignTime>
+      <AutoGen>true</AutoGen>
+    </Compile>
     <Compile Update="Features\DisplayJobOffers.feature.cs">
       <DependentUpon>DisplayJobOffers.feature</DependentUpon>
     </Compile>
   </ItemGroup>
 
   <ItemGroup>
+    <SpecFlowFeatureFiles Update="Features\CreateStudents.feature">
+      <Visible>$(UsingMicrosoftNETSdk)</Visible>
+      <CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+    </SpecFlowFeatureFiles>
+    <SpecFlowFeatureFiles Update="Features\TeardownTest.feature">
+      <Visible>$(UsingMicrosoftNETSdk)</Visible>
+      <CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+    </SpecFlowFeatureFiles>
+    <SpecFlowFeatureFiles Update="Features\SearchJobOffers.feature">
+      <Visible>$(UsingMicrosoftNETSdk)</Visible>
+      <CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+    </SpecFlowFeatureFiles>
     <SpecFlowFeatureFiles Update="Features\DisplayJobOffers.feature">
       <Visible>$(UsingMicrosoftNETSdk)</Visible>
       <CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
