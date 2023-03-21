@@ -11,7 +11,7 @@ Scenario: Create Students
 	And Students Registration Form opened
 	And I fill the Students First Name Field with Automated
 	And I fill the Students Last Name Field with Student
-	And I fill the Students Email Field with madslava50@gmail.com
+	And I fill the Students Email Field with 2madslava50@gmail.com
 	And I fill the Students Country Field with Croatia
 	And I fill the Students Telephone Field with +62 888 1231 231
 	And I fill the Students Address Field with Automated Street 123

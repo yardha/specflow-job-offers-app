@@ -1,5 +1,4 @@
 using CodeMonkeySpecflowSelenium.Drivers;
-using CodeMonkeySpecflowSelenium.Variables;
 using FluentAssertions.Equivalency;
 using NUnit.Framework;
 using OpenQA.Selenium;
@@ -32,7 +31,7 @@ namespace CodeMonkeySpecflowSelenium.StepDefinitions
         {
             //Hit Login button
             driver.FindElement(By.XPath("//*[@id=\"root\"]/div/header/div/div")).Click();
-            Thread.Sleep(2000);
+            Thread.Sleep(5000);
         }
 
         [When(@"JobOffersApp Web should opened to Create Job")]

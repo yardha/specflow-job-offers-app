@@ -1,5 +1,4 @@
 using CodeMonkeySpecflowSelenium.Drivers;
-using CodeMonkeySpecflowSelenium.Variables;
 using FluentAssertions.Equivalency;
 using NUnit.Framework;
 using OpenQA.Selenium;

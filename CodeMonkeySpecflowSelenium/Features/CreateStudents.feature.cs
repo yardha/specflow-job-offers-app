@@ -132,7 +132,7 @@ this.ScenarioInitialize(scenarioInfo);
  testRunner.And("I fill the Students Last Name Field with Student", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
 #line 14
- testRunner.And("I fill the Students Email Field with rm0as8+e6bavcj9ek9oc@grr.la", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+ testRunner.And("I fill the Students Email Field with 2madslava50@gmail.com", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
 #line 15
  testRunner.And("I fill the Students Country Field with Croatia", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
